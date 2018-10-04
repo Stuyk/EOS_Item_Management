@@ -1,0 +1,169 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Thu Oct  4 12:05:09 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "accounts",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "items",
+                    "type": "item[]"
+                }
+            ]
+        },
+        {
+            "name": "clear",
+            "base": "",
+            "fields": [
+                {
+                    "name": "tablename",
+                    "type": "string"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "issueitem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "itemname",
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "type": "string"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "item",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "popqueue",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "queue",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "items",
+                    "type": "item[]"
+                }
+            ]
+        },
+        {
+            "name": "useitem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "clear",
+            "type": "clear",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "issueitem",
+            "type": "issueitem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "popqueue",
+            "type": "popqueue",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "useitem",
+            "type": "useitem",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "accounts",
+            "type": "accounts",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "queue",
+            "type": "queue",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
