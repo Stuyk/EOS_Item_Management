@@ -22,6 +22,11 @@ ie. accountName = YOUR ACCOUNT NAME
 cleos get table accountName accountName accounts
 ```
 
+#### Get the queue table to see all queue'd items.
+```
+cleos get table accountName accountName queue
+```
+
 #### Setup and issue an acccount an item:
 Action:
 * issueitem
